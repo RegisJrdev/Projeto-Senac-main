@@ -200,7 +200,7 @@ form {
 }
 
 input {
-    width: 50rem;
+    width: 45rem;
     height: 3rem;
 
     font-size: 1.4rem;
@@ -212,7 +212,7 @@ input {
 }
 
 textarea {
-    width: 50rem;
+    width: 45rem;
 
     font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
@@ -234,6 +234,9 @@ main {
     align-items: center;
 
     gap: 20rem;
+
+    padding-inline: 4rem;
+
 }
 
 
