@@ -9,9 +9,153 @@
     font-size: 62.5%;
 }
 
+@media (max-width: 500px ) {
+    main {
+        flex-direction: column;
+    }
+}
+
 body, button {
     font-family: "Poppins", sans-serif;
+
 }
+
+/* Estilização Primeira página */
+
+nav {
+    width: 92%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 14rem;
+    padding: 3rem 2rem 2rem 2rem;
+
+    border-bottom: 3px solid #000;
+}
+
+nav .login {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login p {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    border-right: 2px solid black;
+}
+
+nav button {
+    background: #861312;
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    width: 8rem;
+    height: 3.5rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+nav img {
+    width: 18rem;
+}
+
+nav button:hover {
+    color: #861312;
+}
+
+.box {
+    width: 60rem;
+    height: 38rem;
+    border-radius: 1.5rem;
+
+    background: #861312;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+input {
+    width: 45rem;
+    height: 3rem;
+
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+
+    border: none;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    width: 45rem;
+
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+
+    padding: 1rem;
+
+    border: none;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-submit {
+    background: #000;
+
+    color: #fff;
+    font-weight: 600;
+
+    cursor: pointer;
+    height: 4rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* .submit-form {
+    background: #000;
+    height: 4rem;
+    width: 100%;
+} */
+
+img {
+    width: 40%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20rem;
+
+    padding-inline: 4rem;
+}
+
+/* Estilizacao 2 pagina */
 
 .page-top {
     width: 100%;
@@ -137,120 +281,20 @@ footer {
 }
 
 
-/* Estilização Segunda página */
-
-nav {
-    width: 92%;
-    margin: auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 14rem;
-    padding: 3rem 2rem 2rem 2rem;
-
-    border-bottom: 3px solid #000;
-}
-
-nav button {
-    background: #861312;
-
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: bold;
-
-    width: 8rem;
-    height: 3.5rem;
-    border: none;
-
-    cursor: pointer;
-}
-
-nav img {
-    width: 18rem;
-}
-
-nav button:hover {
-    color: #861312;
-}
-
-.box {
-    width: 60rem;
-    height: 35rem;
-    border-radius: 1.5rem;
-
-    background: #861312;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-
-form {
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;
-    align-items: center;
-
-    gap: 1rem;
-
-}
-
-input {
-    width: 45rem;
-    height: 3rem;
-
-    font-size: 1.4rem;
-    font-family: "Poppins", sans-serif;
-    padding: 1rem;
-
-    border: none;
-    border-radius: 0.5rem;
-}
-
-textarea {
-    width: 45rem;
-
-    font-size: 1.4rem;
-    font-family: "Poppins", sans-serif;
-
-    padding: 1rem;
-
-    border: none;
-    border-radius: 0.5rem;
-}
-
-img {
-    width: 40%;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: 20rem;
-
-    padding-inline: 4rem;
-
-}
 
 
 /* Estilizacao 3 tela */
 
+
 table {
     width: 100%;
-    margin-top: 1rem;
+    padding: 1rem 0 1rem 0;
 
     border-spacing: 1.2rem;
 }
 
 table, th, tr {
-    height: 8rem;
+    height: 7.5rem;
     text-align: center;
     
     font-size: 1.4rem;
@@ -268,12 +312,16 @@ tr {
     background: #b9b9b9;
 }
 
+td {
+    padding: 1rem;
+}
+
 .first-cel {
     background: #838383;
 }
 
 .second-cel {
-    width: 110rem;
+    width: 100rem;
 
     padding-inline: 5rem;
     text-align: justify;
